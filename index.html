@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Théo Queiroga — Portfólio</title>
+<link rel="stylesheet" href="https://use.typekit.net/lkq5rdh.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a id="back" href="#inicio">Início</a>
+  <button id="lang" type="button" aria-label="Mudar idioma / Change language"><span data-l="pt">PT</span> | <span data-l="en">EN</span></button>
+  <a id="nav" href="#sobre" data-en="About me">Sobre mim</a>
+</header>
+
+<!-- Botão flutuante (50x50). Para usar seu ícone, troque o <svg> por <img src="img/icone.svg" width="50" height="50" alt=""> -->
+<button id="topo" type="button" aria-label="Voltar ao topo / Back to top">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<main>
+  <!-- ========== PÁGINA INICIAL ========== -->
+  <section id="home">
+    <div class="intro">
+      <!-- Logo embutida no código (base64). Para usar um arquivo, troque o src por "img/logo.png" -->
+      <img class="logo" src="data:image/png;base64,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" alt="Théo Queiroga" width="300" height="250">
+      <p class="who"><strong>Théo Queiroga</strong> · <span data-en="Designer and Illustrator">Designer e Ilustrador</span></p>
+      <h1 class="tagline" data-en="Creativity lies in how we see the reality around us">A criatividade está em como enxergamos a realidade ao redor</h1>
+    </div>
+    <!-- Os cards são criados pelo JavaScript a partir de "const projetos" -->
+    <div class="grid" id="grade"></div>
+  </section>
+
+  <!-- ========== PÁGINA DE PROJETO (preenchida pelo JavaScript) ========== -->
+  <section id="projeto" hidden>
+    <article class="proj">
+      <header class="proj-head">
+        <h1 id="p-nome"></h1>
+        <p class="meta" id="p-meta"></p>
+        <p id="p-desc"></p>
+        <div class="proj-tools" id="p-tools" hidden>
+          <h3 id="p-tools-titulo"></h3>
+          <ul id="p-tools-lista"></ul>
+        </div>
+      </header>
+      <div class="proj-imgs" id="p-imgs"></div>
+    </article>
+  </section>
+
+  <!-- ========== PÁGINA SOBRE MIM ========== -->
+  <section id="sobre" hidden>
+    <div class="about">
+      <div class="about-top">
+        <div>
+          <h2 data-en="I turn business problems into visual solutions that blend strategy and creativity">Transformo problemas de negócio em soluções visuais que misturam estratégia e criatividade</h2>
+          <p class="bio-nome" data-en="Théo Queiroga, Designer and Illustrator">Théo Queiroga, Designer e Ilustrador</p>
+          <p data-en="Born in Recife (PE), my path began in Journalism, which I studied for a year and a half before realizing that my true channel of communication was visual language. I moved on to Graphic Design, graduated in the field and have worked professionally since 2022.">Natural de Recife (PE), minha trajetória começou no Jornalismo, onde cursei por um ano e meio antes de entender que meu verdadeiro canal de comunicação era a linguagem gráfica. Migrei para o Design Gráfico, me formei na área e, desde 2022, atuo profissionalmente.</p>
+          <p data-en="Day to day, my go-to tools are Photoshop and Illustrator, complemented by proficiency in Figma, InDesign, Premiere and Adobe Express. I have a special passion for illustration, bringing an original and expressive eye to the projects I take part in.">No dia a dia, minhas ferramentas de cabeceira são o Photoshop e o Illustrator, complementadas por domínio em Figma, InDesign, Premiere e Adobe Express. Tenho uma paixão especial pela ilustração, trazendo um olhar original e expressivo para os projetos em que me envolvo.</p>
+          <p data-en="I believe design is the perfect meeting point between creativity and functionality. That is why I seek to create stories and visual universes that not only solve problems, but also inspire people.">Acredito que o design é o ponto de encontro perfeito entre a criatividade e a funcionalidade. Por isso busco criar histórias e universos visuais que não apenas resolvam problemas, mas que também inspirem as pessoas.</p>
+        </div>
+        <img class="photo" src="img/fotoperfil2.jpg" alt="Foto Théo Queiroga">
+      </div>
+      <div>
+        <h3 data-en="Academic background">Formação acadêmica</h3>
+        <ul>
+          <li><span>2020 – 2022</span><div data-en="Graphic Design, Centro Universitário AESO Barros Melo">Design Gráfico, Centro Universitário AESO Barros Melo</div></li>
+          <li><span>2018 – 2020</span><div data-en="Computer Graphics, SAGA School of Arts, Games and Animation">Computação Gráfica, SAGA School of Arts, Games and Animation</div></li>
+        </ul>
+
+        <h2 data-en="Let’s talk">Vamos conversar</h2>
+        <ul>
+          <li><span>Email</span><a href="mailto:theolqv.design@gmail.com">theolqv.design@gmail.com</a></li>
+          <li><span>Instagram</span><a href="https://instagram.com/leocadiotheo/" target="_blank" rel="noopener">@leocadiotheo</a></li>
+          <li><span>Behance</span><a href="https://behance.net/theolqv" target="_blank" rel="noopener">behance.net/theolqv</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="rodape" hidden>
+  <p data-en="All rights reserved © by Théo Queiroga">Todos os direitos reservados © by Théo Queiroga</p>
+</footer>
+
+<!-- Imagem ampliada (lightbox) -->
+<div id="zoom" hidden>
+  <button id="zoom-fechar" type="button" aria-label="Fechar / Close">✕</button>
+  <img id="zoom-img" alt="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
